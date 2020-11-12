@@ -1,0 +1,36 @@
+		p
+		{
+			text-align: center;
+			font-size: 32px;
+			font-family: 宋体;
+			text-decoration-line: underline;
+			color: purple;
+		}
+		
+		.yellow
+		{
+			color: yellow;
+		}
+		
+		.green
+		{
+			color: green;
+		}
+		
+		.red
+		{
+			color: red;
+		}
+		
+		.photo
+		{
+			border-style: solid;
+			border-color: gold;
+			border-width: thick;
+		}
+		
+		table
+		{
+			font-weight: bold;
+			color: rgb(0,112,192);
+		}

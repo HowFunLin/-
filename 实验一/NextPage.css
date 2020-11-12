@@ -1,0 +1,11 @@
+		a:link, a:visited
+		{
+			color: #FC0;
+			text-decoration-line: none;
+			margin-left: 20px;
+		}
+		a:hover
+		{
+			color: #0F0;
+			text-decoration-line: underline;
+		}
