@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="InformationRegistration.css" type="text/css" rel="stylesheet">
+<title>InformationRegistration</title>
+</head>
+
+<body>
+<div class="all">
+  <form class="list" action="#" method="post">
+    <h2>计算机行业就业信息登记</h2>
+    <p>
+      <input type="text" placeholder="本人真实姓名" class="txt" >
+    </p>
+    <p>
+      <input type="text" placeholder="请填写毕业院校" class="college" >
+    </p>
+    <p class="area"> 所在地区：
+      <input type="text" class="province">
+      <span> 省</span>
+      <input type="text" class="city">
+      <span> 市</span> </p>
+    <p class="sex"> 性别：
+      <label>
+        <input type="radio" name="sex">
+        男</label>
+      <label>
+        <input type="radio" name="sex">
+        女</label>
+    </p>
+    <p class="choose"> 掌握语言：
+      <label>
+        <input type="checkbox" >
+        C++</label>
+      <label>
+        <input type="checkbox" >
+        Objective-C</label>
+      <label>
+        <input type="checkbox" >
+        Java</label>
+      <label>
+        <input type="checkbox" >
+        Python</label>
+      <label>
+        <input type="checkbox" >
+        HTML+CSS+JavaScript</label>
+    </p>
+    <p>
+      <select class="direction">
+        <option selected="selected" >Android开发</option>
+        <option>网页平面UI设计</option>
+        <option>IOS开发</option>
+        <option>高性能算法</option>
+      </select>
+    </p>
+    <p class="money_box">
+      <input type="text" placeholder="工作薪资" class="money">
+      <span> 元/月（收入）</span> </p>
+    <p>
+      <textarea placeholder="请简述您在计算机行业从事的经历" cols="50" rows="5" class="message"></textarea>
+    </p>
+    <p>
+      <input type="submit" class="btn" value="提  交">
+    </p>
+  </form>
+</div>
+</body>
+</html>
