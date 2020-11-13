@@ -49,11 +49,11 @@ body, h2, form, img, input, select, textarea
     }
     .txt 
     {
-        background: #fff url(images/icon2.png) no-repeat 10px center;
+        background: #fff url(images/icon_name.png) no-repeat 10px center;
     }
     .college 
     {
-        background: #fff url(images/icon3.png) no-repeat 10px center;
+        background: #fff url(images/icon_college.png) no-repeat 10px center;
     }
     .choose
     {
