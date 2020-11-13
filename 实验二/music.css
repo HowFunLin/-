@@ -59,17 +59,33 @@ a{ display:block;}
 .right{
 	width:224px;
 	height:340px;
-	padding-top:60px;
+	padding-top:50px;
 	float:right;
 	font-style:italic;
 	font-weight:bold;
+    font-family: 微软雅黑 Light;
 }
 .right h2{
 	font-size:88px;
 	color:#3f9ade;
 }
+.music
+{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top:0px;
+    opacity: 0.7;
+    overflow: hidden;
+}
 .right .txt{
-	font-size:18px;
+	font-size:27px;
 	color:#55606b;
 	margin-bottom:20px;
+}
+.lyric
+{
+    width: 224px;
+    height: 210px;
+    overflow: auto;
 }
