@@ -62,8 +62,7 @@ a{ display:block;}
 	padding-top:50px;
 	float:right;
 	font-style:italic;
-	font-weight:bold;
-    font-family: 微软雅黑 Light;
+    font-family: "Microsoft YaHei Light";
 }
 .right h2{
 	font-size:88px;
@@ -88,4 +87,7 @@ a{ display:block;}
     width: 224px;
     height: 210px;
     overflow: auto;
+    font-style: normal;
+    font-family: "楷体";
+    font-weight: bold;
 }
