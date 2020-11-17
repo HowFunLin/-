@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <link href="InformationRegistration.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" src="js/city.js"></script>
 <title>InformationRegistration</title>
 </head>
 
 <body>
 <div class="all">
-  <form class="list" action="#" method="post">
+  <form class="list" action="#" method="post" name="form2">
     <h2>计算机行业就业信息登记</h2>
     <p>
       <input type="text" placeholder="本人真实姓名" class="txt" >
@@ -17,10 +18,49 @@
       <input type="text" placeholder="请填写毕业院校" class="college" >
     </p>
     <p class="area"> 所在地区：
-      <input type="text" class="province">
-      <span> 省</span>
-      <input type="text" class="city">
-      <span> 市</span> </p>
+      <span>省：</span>
+	  <select name="sf" onchange="changecity()" >
+       <option selected>-请选择-</option>
+       <option value="江苏省">江苏省</option>
+       <option value="北京">北京</option>
+       <option value="天津">天津</option>
+       <option value="上海">上海</option>
+       <option value="重庆">重庆</option>
+       <option value="广东省">广东省</option>
+       <option value="浙江省">浙江省</option>
+       <option value="福建省">福建省</option>
+       <option value="湖南省">湖南省</option>
+       <option value="湖北省">湖北省</option>
+       <option value="山东省">山东省</option>
+       <option value="辽宁省">辽宁省</option>
+       <option value="吉林省">吉林省</option>
+       <option value="云南省">云南省</option>
+       <option value="四川省">四川省</option>
+       <option value="安徽省">安徽省</option>
+       <option value="江西省">江西省</option>
+       <option value="黑龙江省">黑龙江省</option>
+       <option value="河北省">河北省</option>
+       <option value="陕西省">陕西省</option>
+       <option value="海南省">海南省</option>
+       <option value="河南省">河南省</option>
+       <option value="山西省">山西省</option>
+       <option value="内蒙古">内蒙古</option>
+       <option value="广西">广西</option>
+       <option value="贵州省">贵州省</option>
+       <option value="宁夏">宁夏</option>
+       <option value="青海省">青海省</option>
+       <option value="新疆">新疆</option>
+       <option value="西藏">西藏</option>
+       <option value="甘肃省">甘肃省</option>
+       <option value="台湾省">台湾省</option>
+       <option value="香港">香港</option>
+       <option value="澳门">澳门</option>
+       <option value="国外">国外</option>
+    </select>
+    <span>城市：</span>
+    <select name="city" style="width:80">
+    <option>==城市==</option>
+    </select>
     <p class="sex"> 性别：
       <label>
         <input type="radio" name="sex">
