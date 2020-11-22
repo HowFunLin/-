@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.tab {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    height: 25px;
+    width: 480px;
+    list-style: none;
+}
+.tab li {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-top: solid #fff;
+}
+.products {
+    width: 600px;
+    border: solid #ddd;
+    height: 375px;
+}
+.products .main {
+    float: left;
+    display: none;
+}
+.products .main.selected {
+    display: block;
+}
+.tab li.active {
+    border-color: red;
+    border-bottom: 0;
+}
