@@ -1,0 +1,43 @@
+.d1
+{
+    background-image: url("img/music_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.d2
+{
+    background: rgba(225,225,225,0.3);
+}
+
+.back
+{
+    position: absolute;
+    top: 6px;
+    left: 280px;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+audio
+{
+    margin-left: 40%;
+    margin-top: 320px;
+}
+
+.lyric
+{
+    margin-left: 62%;
+    width: 300px;
+    height: 340px;
+    overflow: auto;
+    font-style: normal;
+    font-family: "楷体";
+    font-weight: bold;
+    font-size: 25px;
+}
