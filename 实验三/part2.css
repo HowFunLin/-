@@ -47,6 +47,7 @@ th
     font-family: 微软雅黑 Light;
     background-image: url("img/time.png");
     color: lightgoldenrodyellow;
+    border-radius: 30px;
 }
 .video
 {

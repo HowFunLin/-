@@ -1,10 +1,10 @@
 body{
 	margin:0px;padding:0;
-	font-family:Arial, Helvetica,  sans-serif,微軟正黑體;
-	cursor:url(images/my.cur),url(images/my.png),auto;          /*改變滑鼠游標*/
-	background-image: url('images/bg.jpg');    /*加入網頁背景圖*/
-	background-attachment:fixed;            /*設定背景圖為固定式*/
-
+	font-family:Arial, Helvetica, sans-serif;
+	cursor:url(images/my.cur),url(images/my.png),auto;         
+	background-image: url('images/bg.jpg');    
+	background-attachment:fixed;            
+    background-repeat: repeat-x;
 }
 #main{
 	margin: 0 auto;
@@ -23,39 +23,40 @@ aside{
 	float: left;
 	height: 470px;
 	background: url(images/bg_lt.png) no-repeat;
+    background-color: rgb(152, 102, 0);
 }
-nav{             /*nav區塊格式*/
+nav{             
 	border:0px #000000 solid;
 	margin: 0px auto;padding:0px;
 	margin-top:170px;
 }
 nav ul {
-	list-style:none;        /*不顯示清單項目符號*/
-	margin:0;padding:0; 
+	list-style:none;        
+	margin:0;padding:7px 12px; 
 }
 
 nav li a {
 	display:block; 
 	width:150px; 
 	height:55px; 
-	background-image:url(images/btn.png);  /*超連結原始狀態背景圖*/
+	background-image:url(images/btn.png);  
 	line-height:55px; 
-	text-indent:45px; 
-	text-decoration:none;    /*不顯示底線*/
+	text-indent:43px; 
+	text-decoration:none;    
 	color:#333333;
 	font-size:15px;
 }
 nav li a:hover {
-	background-image:url(images/btn_hover.png); /*滑鼠移到連結時背景圖*/
+	background-image:url(images/btn_hover.png); 
 	color:#ffffff; 
 }
 h1#text1{
 	margin:0px;padding:0px;
 	top:15px;
-	position:absolute;     /*設定div為絕對定位*/
-	font-size:40px;       /*字高*/
-	color:#FF0000;       /*字的顏色*/
-	margin-left:50px;          /*與元件水平距離*/
+	position:absolute;     
+	font-size:40px;       
+	color:#FF0000;       
+	margin-left:50px;          
 }
 
 h1#text2{
@@ -65,7 +66,7 @@ h1#text2{
 	color:#FFFFFF;
 	top:30px;
 	margin-left:150px;
-	filter:glow(color=#ff0000, strength=5);   /*設定光暈濾鏡*/
+	filter:glow(color=#ff0000, strength=5);   
 	text-shadow: 5px 5px 5px #FF0000;
 }
 article{
@@ -89,6 +90,18 @@ fieldset{
 }
 fieldset legend{
 	text-align:center; 
+}
+.location
+{
+    text-indent: 100px;
+}
+.photos
+{
+    width:700px;
+	left:10px;
+    top:10px;
+	margin:0px auto;
+    padding:20px;
 }
 img{
 	margin:3px;
