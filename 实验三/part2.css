@@ -35,3 +35,32 @@
     border-color: red;
     border-bottom: 0;
 }
+th
+{
+    height: 400px;
+}
+.time
+{
+    width: 510px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 微软雅黑 Light;
+    background-image: url("img/time.png");
+    color: lightgoldenrodyellow;
+}
+.video
+{
+    background-image: url("img/plum.jpeg");
+    background-position: center;
+    height: 768px;
+    width: 1475px;
+    align-items: center;
+}
+iframe
+{
+    border-width: 0px;
+    height: 600px;
+    width: 800px;
+    padding-left: 350px;
+    padding-top: 84px;
+}

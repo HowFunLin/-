@@ -1,4 +1,5 @@
-jQuery(window).ready(function () {
+jQuery(window).ready(function () 
+{
     $(".tab>li").mouseenter(function () {
 
 		$(this).addClass("active").siblings("li").removeClass("active");

@@ -1,6 +1,6 @@
-window.onload = function () 
-{
-    var img = document.getElementById("tiger");
+$(function()
+{    
+	var img = document.getElementById("tiger");
     
     img.onmouseover = function ()
     {
@@ -11,4 +11,4 @@ window.onload = function ()
     {
         this.src = "img/cat.png";
     }
-}
+});
