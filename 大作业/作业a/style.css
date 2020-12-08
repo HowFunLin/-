@@ -1,0 +1,100 @@
+@charset "utf-8";
+html, body {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}                   /*全局控制*/
+body, form, input, h1, p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}          /*重置浏览器的默认样式*/
+form {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+form div {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 100px 0;
+    padding-left: 5%;
+}
+form div:nth-child(1) {
+    background-image: url("images/login.png");
+    color: black;
+}
+form div:nth-child(2) {
+    background-image: url("images/area.png");
+    color: gray;
+    font-family: Microsoft Yahei;
+}
+form div:nth-child(3) {
+    background-image: url("images/hobby.png");
+    background-position: right;
+    color: darkgreen;
+    font-size: 20px;
+    padding-top: 10%;
+    padding-left: 70px;
+}
+form div:nth-child(4) {
+    background-image: url("images/board.png");
+    color: white;
+}
+p {
+    display: block;
+    height: 25%;
+}
+form div:last-of-type p {
+    height: 33%;
+}
+.tip {
+    width: 140px;
+    display: inline-block;                /*将行内元素转换为行内块元素*/
+    text-align: left;
+    padding-right: 10px;
+}
+.area {
+    font-size: 30px;
+    padding-left: 13%;
+    padding-top: 5%;
+}
+.locate {
+    width: 90px;
+    text-align: left;
+}
+p span {
+    width: 90px;
+    display: inline-block;                /*将行内元素转换为行内块元素*/
+    text-align: right;
+    padding-right: 10px;
+}
+.ly {
+    position: relative;
+    top: -160px;
+    font-size: 20px;
+}
+p input {
+    width: 200px;
+    height: 18px;
+    border: 1px solid #d4cdba;
+    padding: 2px;                           /*设置输入框与输入内容之间拉开一些距离*/
+}
+textarea {
+    width: 450px;
+    height: 170px;
+    resize: none;
+}
+.btn input {                                /*设置两个按钮的宽高、边距及边框样式*/
+    width: 100px;
+    height: 30px;
+    background: #93b518;
+    margin-top: 130px;
+    margin-left: 150px;
+    border-radius: 3px;                      /*设置圆角边框*/
+    font-size: 18px;
+    color: #fff;
+}
