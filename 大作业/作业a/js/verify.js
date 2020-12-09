@@ -1,5 +1,5 @@
 $(function () {
-    $(".tip").hide();
+    $(".tip").hide(); //初始值为隐藏
 })
 
 function checkpas1() { //当第一个密码框失去焦点时，触发checkpas1事件
@@ -12,7 +12,7 @@ function checkpas1() { //当第一个密码框失去焦点时，触发checkpas1�
         $(".tip").hide(); //若两次输入的密码相等且都不为空时，不显示错误信息。
 }
 
-function checkpas() { //当第一个密码框失去焦点时，触发checkpas2件
+function checkpas() { //当第二个密码框发生改变时，触发checkpas事件
     var pas1 = document.getElementById("password").value;
     var pas2 = document.getElementById("repassword").value; //获取两个密码框的值
     
@@ -29,6 +29,17 @@ function checkpas2() { //点击提交按钮时，触发checkpas2事件，会进�
     
     if (pas3 != pas4) {
         alert("两次输入的密码不一致！");
+        return false;
+    }
+}
+
+function checkArea() //点击提交按钮时，触发checkArea事件，会进行弹框提醒以防未选择地址信息
+{
+	var province = document.getElementById("s_province").value;
+	var city = document.getElementById("s_city").value;
+	
+	if (province == "==省份==" || city == "==城市==") {
+        alert("请选择你所在的地址！");
         return false;
     }
 }

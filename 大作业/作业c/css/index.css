@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#first > div:nth-of-type(1), #first > div:nth-of-type(3) {
+    background-color: lightsteelblue;
+    font-family: Microsoft Yahei Light;
+}
+#content {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 0;
+}
+#content div {
+    width: 50%;
+    float: left;
+    padding: 16% 0;
+}
+#content div a {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: auto;
+}
+#content div a img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#content .but
+{
+    width: 50%;
+    float: right;
+    padding: 0;
+}
