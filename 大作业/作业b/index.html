@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.0.min.js"></script>
+<link rel="stylesheet" href="js/jquery.mobile-1.4.0.min.css" type="text/css"/>
+<link rel="stylesheet" href="checkDemo.css"/>
+<script type="text/javascript" src="js/cloud.js"></script>
+<script type="text/javascript" src="js/show.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+<script src="js/js.js"></script>
+<link rel="stylesheet" href="css.css"/>
+<style>
+.mask {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+.small {
+    position: relative;
+}
+img {
+    vertical-align: top;
+}
+</style>
+<script type="text/javascript" src="js/animate.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div data-role="header">
+    <div class="box"> <span></span>
+        <ul>
+            <li class="main">首页新闻</li>
+            <li class="main"> 校内通知
+                <ul>
+                    <li>会议通知</li>
+                    <li>事务通知</li>
+                </ul>
+            </li>
+            <li class="main">公示公告</li>
+            <li class="main"> 招聘信息
+                <ul>
+                    <li>本科招生</li>
+                    <li>研究生招生</li>
+                    <li>博士后招聘</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="title">
+    <h2>众志成城，勇抗病毒</h2>
+</div>
+<div class="banner">
+    <div class="banner_pic" id="banner_pic">
+        <div class="current"><img src="images/01.jpg" alt="" /></div>
+        <div class="pic"><img src="images/02.jpg" alt="" /></div>
+        <div class="pic"><img src="images/03.jpg" alt="" /></div>
+        <div class="pic"><img src="images/04.jpg" alt="" /></div>
+    </div>
+    <ol id="button">
+        <li class="current">1</li>
+        <li class="but">2</li>
+        <li class="but">3</li>
+        <li class="but">4</li>
+    </ol>
+</div>
+<p class="text">&nbsp;&nbsp;&nbsp;&nbsp;“团结是铁，团结是钢，团结就是力量。团结是中国人民和中华民族战胜前进道路上一切风险挑战、不断从胜利走向新的胜利的重要保证。”正在进行的这场防控疫情的严峻斗争，深刻印证了这一结论。</p>
+<p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;“万夫一力，天下无敌”。从1998年的抗洪抢险，到2003年的抗击非典，再到2008年的抗震救灾，一次次伟大斗争告诉我们：越是面对挑战，越需要团结的力量；越是攻坚克难，越需要群策群力。在党中央坚强领导下，万众一心，众志成城，就没有中国人民克服不了的困难、迈不过去的坎。打赢疫情防控阻击战，我们有信心，我们有能力!</p>
+<div class="teacher">
+    <div class="teacher_title">学习生活<a href="#"><img src="images/more.gif" alt=""/></a></div>
+    <div class="teacher_con">
+        <ul>
+            <li>
+                <div><a href="#"><img src="images/classroom.png" alt=""/></a></div>
+                <div class="name">教学一号楼教室</div>
+            </li>
+            <li>
+                <div><a href="#"><img src="images/library.png" alt=""/></a></div>
+                <div class="name">图书馆六楼北区</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="stages">
+    <div class="stages_title">通知公告</div>
+    <div class="stages_con">
+        <marquee>
+        <ul>
+            <li><a href="#">2021年计算机学院招收硕士研究生资格名单公示</a><a href="#">计算机学院人工智能专业生源选拔实施办法</a></li>
+        </ul>
+        </marquee>
+    </div>
+</div>
+<div class="wrap">
+    <div>
+        <input type="button" value="添加数据" id="j_btnAddData" class="btnAdd"/>
+    </div>
+    <table>
+        <thead>
+            <tr> 
+                <!-- <th><input type="checkbox" id="j_cbAll" /></th> -->
+                <th>课程名称</th>
+                <th>所属学院</th>
+                <th>是否已学会</th>
+            </tr>
+        </thead>
+        <tbody id="j_tb">
+            <tr> 
+                <!-- <td><input type="checkbox"/></td> -->
+                <td>高等数学</td>
+                <td>数学学院</td>
+                <td><a href="javascrip:;" class="get">GET</a></td>
+            </tr>
+            <tr> 
+                <!-- <td><input type="checkbox"/></td> -->
+                <td>数据结构</td>
+                <td>计算机学院</td>
+                <td><a href="javascrip:;" class="get">GET</a></td>
+            </tr>
+            <tr> 
+                <!-- <td><input type="checkbox"/></td> -->
+                <td>大学物理</td>
+                <td>物理学院</td>
+                <td><a href="javascrip:;" class="get">GET</a></td>
+            </tr>
+            <tr> 
+                <!-- <td><input type="checkbox"/></td> -->
+                <td>大学英语</td>
+                <td>外国语学院</td>
+                <td><a href="javascrip:;" class="get">GET</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id="j_mask" class="mask"></div>
+<div id="j_formAdd" class="form-add">
+    <div class="form-add-title">
+        <div id="j_hideFormAdd">x</div>
+    </div>
+    <div class="form-item">
+        <label class="lb" for="j_txtLesson">课程名称：</label>
+        <input class="txt" type="text" id="j_txtLesson" placeholder="请输入课程名称">
+    </div>
+    <div class="form-item">
+        <label class="lb" for="j_txtBelSch">所属学院：</label>
+        <input class="txt" type="text" id="j_txtBelSch" value="计算机学院">
+    </div>
+    <div class="form-submit">
+        <input type="button" value="添加" id="j_btnAdd">
+    </div>
+</div>
+<div class="glass">
+    <div class="small"> <img src="images/001.jpg" alt=""/>
+        <div class="mask"></div>
+    </div>
+    <div class="big"> <img src="images/0001.jpg" alt=""/> </div>
+</div>
+<div class="sli" id="sli">
+    <div class="slide" id="slide">
+        <ul>
+            <!--五张图片-->
+            <li><a href="#"><img src="images/slidepic1.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/slidepic2.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/slidepic3.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/slidepic4.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/slidepic5.jpg" alt=""/></a></li>
+        </ul>
+        <!--左右切换按钮-->
+        <div class="arrow" id="arrow"> <a href="javascript:;" class="prev"></a> <a href="javascript:;" class="next"></a> </div>
+    </div>
+</div>
+</body>
+</html>

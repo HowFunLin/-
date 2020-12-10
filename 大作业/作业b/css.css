@@ -1,0 +1,49 @@
+﻿@charset "UTF-8";
+/*初始化  reset*/
+body,button,input,select,textarea{}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+
+.sli{
+    width:100%;
+    height: 250px;
+    margin:10px auto;
+    transform: translate3d(0,0,0);
+}
+.slide {
+    height:250px;
+    position: relative;
+}
+.slide li{
+    position: absolute;
+}
+.slide li img{
+    width:100%;
+}
+.arrow{
+    opacity: 0;
+}
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(images/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(images/next.png);
+}
+
+
+
+
+
+
+
+
