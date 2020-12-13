@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 body {
     background: white;
@@ -13,7 +14,7 @@ body {
     border-radius: 8px;
     background-color: beige;
 }
-span {
+.box span {
     position: absolute;
     left: 0;
     top: 0;
@@ -47,57 +48,74 @@ span {
 }
 /*轮播图*/
 .banner {
+    background: url("images/bg_banner.jpg");
     width: 100%;
-    height: 285px;
-    margin: 13px auto 15px auto;
-    position: relative;
-    top: 40px;
+    height: auto;
+    margin-top: 50px;
 }
-.banner .banner_pic .pic {
+.banner .top {
+    background: url("images/indextop.jpg");
+    width: 100%;
+    height: 10px;
+}
+.banner .bottom {
+    background: url("images/indexbottom.jpg");
+    width: 100%;
+    height: 10px;
+}
+.banner .box2 {
+    width: 100%;
+    position: relative;
+}
+#SwitchBigPic {
+    margin-left: 9px;
+}
+#SwitchBigPic span {
     display: none;
 }
-.banner .banner_pic .current {
+#SwitchBigPic img {
+    width: 60%;
+    height: 210px;
+}
+#SwitchBigPic .sp {
     display: block;
 }
-.banner ol {
+#SwitchNav {
+    left: 60%;
+    width: 40%;
     position: absolute;
-    left: 250px;
-    bottom: 26px;
-    list-style: none;
+    top: 0;
 }
-.banner ol .but {
-    float: left;
-    width: 26px;
-    height: 22px;
-    border: 1px solid #FF7101;
-    margin-right: 12px;
-    text-align: center;
-    line-height: 22px;
-    background: #fff;
-    color: #FF7101;
+#SwitchNav li {
+    background: url("images/tabs_bg.gif");
+    width: 98%;
+    height: 70px;
+    margin-bottom: 1px;
+}
+#SwitchNav a {
+    display: block;
+    color: #444444;
     font-size: 14px;
-    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 90%;
+    height: 70px;
 }
-.banner ol li {
-    cursor: pointer;
-}
-.banner ol .current {
+#SwitchNav a:hover {
+    background: url("images/tab_current_bgd.gif") no-repeat left top;
     color: #fff;
-    background: #FF7101;
-    float: left;
-    width: 26px;
-    height: 22px;
-    border: 1px solid #FF7101;
-    margin-right: 12px;
-    text-align: center;
-    line-height: 22px;
-    font-size: 14px;
-    font-weight: bold;
+}
+#SwitchNav span {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 2px 0px;
 }
 /*文字*/
 .text {
     position: relative;
-    margin-top: 55px;
+    margin-top: 20px;
     font-family: KaiTi;
 }
 .text2 {
@@ -105,13 +123,7 @@ span {
     margin-bottom: 16px;
     font-family: KaiTi;
 }
-/*校园生活*/
-.teacher {
-    padding: 0px;
-    width: 100%;
-    clear: both;
-}
-.teacher_title {
+h1 {
     background: url(images/title_bg.gif) repeat-x;
     width: 100%;
     height: 24px;
@@ -124,36 +136,26 @@ span {
     padding: 6px 0px 0px 8px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 10px;
 }
-.teacher_title img {
-    float: right;
-    display: inline;
-}
-.teacher_title a {
-    margin: 0px 0px 0px 0px;
-    float: right;
-    position: relative;
-    right: 10px;
-    top: 0;
-}
-.teacher_con {
+.box1 {
+    padding: 10px 0px;
     width: 100%;
-    margin: 0px;
-    padding: 18px 0px 15px 2px;
+    clear: both;
+}
+.imgbox {
+    width: 100%;
+    font-size: 0px;
+    white-space: nowrap;
     overflow: hidden;
 }
-.teacher_con ul li {
-    margin: 3px 13px 0px 13px;
-    padding: 0px;
-    float: left;
-    text-align: center;
-    list-style: none;
+.imgbox img {
+    width: 180px;
+    border: 1px #ccc solid;
+    padding: 2px;
 }
-.teacher_con ul li .name {
-    margin: 10px 0px 0px 0px;
-}
-.teacher_con ul li .name a {
-    color: #535353;
+.imgbox a {
+    margin-right: 20px;
 }
 /*走马灯*/
 .stages {
