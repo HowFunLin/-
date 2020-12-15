@@ -8,7 +8,7 @@ a,input,button,select,textarea{outline:none;}
 a,button{cursor:pointer;}
 
 .sli{
-    width:100%;
+    width:425px;
     height: 250px;
     margin:10px auto;
     transform: translateZ(0);

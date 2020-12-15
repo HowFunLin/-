@@ -40,18 +40,12 @@ body {
     position: relative;
     z-index: 10;
 }
-.title {
-    position: absolute;
-    margin-left: 24%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 /*轮播图*/
 .banner {
     background: url("images/bg_banner.jpg");
-    width: 100%;
+    width: 425px;
     height: auto;
-    margin-top: 50px;
+    margin: 20px auto;
 }
 .banner .top {
     background: url("images/indextop.jpg");
@@ -194,9 +188,10 @@ h1 {
     text-decoration: none;
 }
 .glass {
-    width: 100%;
+    width: 425px;
     border: 1px solid #ccc;
     position: relative;
+	margin: 0px auto;
 }
 .big {
     width: 200px;
