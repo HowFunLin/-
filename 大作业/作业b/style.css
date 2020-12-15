@@ -43,7 +43,7 @@ body {
 /*轮播图*/
 .banner {
     background: url("images/bg_banner.jpg");
-    width: 425px;
+    width: 390px;
     height: auto;
     margin: 20px auto;
 }
@@ -164,7 +164,7 @@ h1 {
     overflow: visible;
 }
 .stages_title {
-    width: 96px;
+    width: 80px;
     text-align: center;
     border-right: 1px solid #c4c4c4;
     float: left;
@@ -188,7 +188,7 @@ h1 {
     text-decoration: none;
 }
 .glass {
-    width: 425px;
+    width: 414px;
     border: 1px solid #ccc;
     position: relative;
 	margin: 0px auto;

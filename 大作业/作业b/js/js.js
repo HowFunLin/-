@@ -14,7 +14,7 @@ window.onload = function () {
     }, { // 3
         width: 300,
         top: 37.5,
-        left: 57,
+        left: 43,
         opacity: 100,
         zIndex: 4
     }, { // 4
